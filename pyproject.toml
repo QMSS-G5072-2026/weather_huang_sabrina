@@ -1,6 +1,6 @@
 [project]
 name = "weather_srh2206"
-version = "0.1.0"
+version = "0.1.1"
 description = "This iss for hw07 and I'll be using three functions from last week's weather exercise and turn it into a python package."
 readme = "README.md"
 authors = [{ name = "Sabrina Huang", email = "srh2206@columbia.edu" }]
