@@ -1,0 +1,35 @@
+[project]
+name = "weather_srh2206"
+version = "0.1.0"
+description = "This iss for hw07 and I'll be using three functions from last week's weather exercise and turn it into a python package."
+readme = "README.md"
+authors = [{ name = "Sabrina Huang", email = "srh2206@columbia.edu" }]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0",
+    "pytest-cov>=7.1",
+]
+docs = [
+    "myst-nb>=1.4",
+    "sphinx>=9.0",
+    "sphinx-autoapi>=3.8",
+    "sphinx-rtd-theme>=3.1",
+]
+
+[tool.uv]
+default-groups = ["dev", "docs"]
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14"]
+build-backend = "uv_build"
