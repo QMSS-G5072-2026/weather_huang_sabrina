@@ -7,7 +7,9 @@ authors = [{ name = "Sabrina Huang", email = "srh2206@columbia.edu" }]
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "pandas>=3.1.0",
+]
 
 [dependency-groups]
 dev = [

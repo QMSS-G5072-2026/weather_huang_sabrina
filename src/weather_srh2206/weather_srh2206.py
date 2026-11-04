@@ -1,5 +1,13 @@
 # a) Copy celsius_to_fahrenheit, summarize_temperatures, and clean_readings (including the constants and imports they need) from Exercises/HW06_v5_weather/weather.py into src/weather_<uni>/weather_<uni>.py. Do not copy fetch_forecast, heat_alert, or run_pipeline.
 
+import math
+
+import pandas as pd
+
+ABSOLUTE_ZERO_C = -273.15
+MIN_PLAUSIBLE_C = -90.0
+MAX_PLAUSIBLE_C = 60.0
+
 def celsius_to_fahrenheit(celsius: float) -> float:
     """
     Convert a temperature from degrees Celsius to degrees Fahrenheit.
