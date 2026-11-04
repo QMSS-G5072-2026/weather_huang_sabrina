@@ -1,6 +1,8 @@
+![ci](https://github.com/QMSS-G5072-2026/weather_huang_sabrina/actions/workflows/ci-cd.yml/badge.svg)
+
 # weather_srh2206
 
-This iss for hw07 and I'll be using three functions from last week's weather exercise and turn it into a python package.
+This is for hw07 and I'll be using three functions from last week's weather exercise and turn it into a python package.
 
 ## Installation
 
@@ -21,7 +23,12 @@ $ uv build                      # build the sdist and wheel into dist/
 
 ## Usage
 
-- TODO
+```python
+import weather_srh2206
+
+weather_srh2206.celsius_to_fahrenheit(100)  # 212.0
+weather_srh2206.summarize_temperatures([10.0, 20.0, float("nan")])
+```
 
 ## Contributing
 
